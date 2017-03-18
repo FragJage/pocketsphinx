@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pocketsphinx" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug x64">
+				<Option output="bin/Debug/x64/pocketsphinx" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/x64/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-m64" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin/Release/x64/pocketsphinx" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/x64/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-m64" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="Debug x32">
+				<Option output="bin/Debug/x32/pocketsphinx" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/x32/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-m32" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="Release x32">
+				<Option output="bin/Release/x32/pocketsphinx" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/x32/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-m32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../sphinxbase/include" />
+			<Add directory="../sphinxbase/include/win32" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="src/libpocketsphinx/acmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/allphone_search.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/bin_mdef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/blkarray_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/dict.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/dict2pid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/fsg_history.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/fsg_lextree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/fsg_search.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/hmm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/kws_detections.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/kws_search.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/mdef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ms_gauden.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ms_mgau.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ms_senone.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ngram_search.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ngram_search_fwdflat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ngram_search_fwdtree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/phone_loop_search.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/pocketsphinx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ps_lattice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ps_mllr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/ptm_mgau.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/s2_semi_mgau.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/tmat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/libpocketsphinx/vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
